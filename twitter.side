@@ -1,0 +1,106 @@
+{
+  "id": "95c0c9fb-e18c-4b6a-8771-f38eb8b12127",
+  "version": "2.0",
+  "name": "twitter",
+  "url": "https://twitter.com",
+  "tests": [{
+    "id": "299949d6-d55d-4b5c-bb2f-a4f0ecfe9860",
+    "name": "NewTwitter",
+    "commands": [{
+      "id": "f8858008-3436-42bd-8ddf-0a2d65b2f350",
+      "comment": "",
+      "command": "open",
+      "target": "/oprah",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66c2f675-70ff-4caa-8b24-d70dd65c6bb6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "4ba5b5d6-dc84-44f3-8287-de19dab0978b",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.css-1dbjc4n:nth-child(2) > .css-1dbjc4n:nth-child(1) > .css-1dbjc4n:nth-child(1) > .css-1dbjc4n:nth-child(1) > .css-1dbjc4n:nth-child(2) > .css-1dbjc4n:nth-child(2) .css-901oao:nth-child(1) > .css-901oao:nth-child(1) > .css-901oao:nth-child(1)",
+      "targets": [
+        ["css=.css-1dbjc4n:nth-child(2) > .css-1dbjc4n:nth-child(1) > .css-1dbjc4n:nth-child(1) > .css-1dbjc4n:nth-child(1) > .css-1dbjc4n:nth-child(2) > .css-1dbjc4n:nth-child(2) .css-901oao:nth-child(1) > .css-901oao:nth-child(1) > .css-901oao:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div/div/div[2]/div/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": "name"
+    }, {
+      "id": "5e0d3954-8272-4e45-bb89-cfad597ae8d9",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelectorAll(\"img.css-9pa8cd\")[1].src",
+      "targets": [],
+      "value": "img"
+    }, {
+      "id": "e751e5cf-43ee-4bef-8ce3-2b1e991eaf2b",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[2]/a/span/span",
+      "targets": [
+        ["css=.css-1dbjc4n:nth-child(5) > .css-1dbjc4n:nth-child(2) > .css-4rbku5 > .css-901oao:nth-child(1) > .css-901oao", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div/div/div[5]/div[2]/a/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span/span", "xpath:position"]
+      ],
+      "value": "followers"
+    }, {
+      "id": "0f1127a3-fa95-46fb-8df5-d33c52c83729",
+      "comment": "",
+      "command": "echo",
+      "target": "url: ${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da5c4799-8eda-4af1-b177-201d8f56e45f",
+      "comment": "",
+      "command": "echo",
+      "target": "name: ${name}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "111b7251-32ff-4f09-854f-a11b4958a451",
+      "comment": "",
+      "command": "echo",
+      "target": "img: ${img}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "acac3701-3fc3-47b9-9a46-2317b73e7ed3",
+      "comment": "",
+      "command": "echo",
+      "target": "followers: ${followers}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d08a76b2-36e7-451d-b863-8565348b33a1",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe388831-2101-49f6-a17d-1478acfd49db",
+      "comment": "",
+      "command": "executeAsyncScript",
+      "target": "function post(path, params, method = \"post\") {const form = document.createElement(\"form\"); form.method = method; form.action = path; for (const key in params) { if (params.hasOwnProperty(key)) { const hiddenField = document.createElement(\"input\"); hiddenField.type = \"hidden\"; hiddenField.name = key; hiddenField.value = params[key]; form.appendChild(hiddenField) } } document.body.appendChild(form); form.submit(); } post(\"http://localhost:8080/add\", {\"url\": ${url}, \"name\":${name}, \"img\":${img}, \"followers\":${followers}})",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d862218e-e461-4302-8713-1f3fad6d3745",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://twitter.com/"],
+  "plugins": []
+}
