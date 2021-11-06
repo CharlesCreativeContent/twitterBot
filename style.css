@@ -1,0 +1,33 @@
+.circle {
+  border-radius: 50%;
+}
+#profiles_container {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  grid-gap: 5vw;
+}
+.card {
+  border-radius: 50% 50% 0 0 / 35% 35% 0 0;
+  width: 20vw;
+  float:left;
+  height: 485px
+}
+
+#twitterCards{
+clear: both
+}
+
+button{
+clear: both
+}
+
+em{
+color: blue;
+}
+section{
+width: 100vw;
+}
+
+body {
+text-align:center;
+}
