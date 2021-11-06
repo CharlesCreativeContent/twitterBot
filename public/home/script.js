@@ -16,7 +16,7 @@ function submiter(){
     })
     
     alert("users submitted")
-    window.location.reload()
+    setTimeout(window.location.reload,3000)
 }
 
 let base = window.location.href.split('/').reverse()[0]
