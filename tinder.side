@@ -1,0 +1,267 @@
+{
+  "id": "36431783-fd42-4635-91c5-ba60d1b713bf",
+  "version": "2.0",
+  "name": "SeleniumScripts",
+  "url": "google.com",
+  "tests": [{
+    "id": "ce6acfe5-5f86-45ef-b921-fa0e328e1e70",
+    "name": "tinder",
+    "commands": [{
+      "id": "2dd081c4-b027-45cd-bddd-dba77042c4fe",
+      "comment": "",
+      "command": "open",
+      "target": "https://tinder.com/app/recs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "372bfb1d-65a7-4cf6-92ad-e959a1d8ac6d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.Mx\\(a\\):nth-child(4) path",
+      "targets": [],
+      "value": "100000"
+    }, {
+      "id": "bff68a9b-c9d8-4406-a160-1dfc9812ac1c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.Isolate",
+      "targets": [],
+      "value": "100000"
+    }, {
+      "id": "56a58953-f412-48bc-8ff4-7879a77711d7",
+      "comment": "",
+      "command": "while",
+      "target": "1<2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "159bcc02-fd9e-4388-b980-dc3c2c4de4a2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.ceil(Math.random()*500)+1000",
+      "targets": [],
+      "value": "waitTime"
+    }, {
+      "id": "c7a63032-6102-4b5f-8cab-96916e432bb3",
+      "comment": "",
+      "command": "pause",
+      "target": "${waitTime}",
+      "targets": [],
+      "value": "waitTime"
+    }, {
+      "id": "3e850ea7-23b9-49f4-ac2d-d08cbe77d212",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.ceil(Math.random()*100)",
+      "targets": [],
+      "value": "iLikeRating"
+    }, {
+      "id": "51394077-33b4-476c-be4c-575474d27fec",
+      "comment": "",
+      "command": "if",
+      "target": "${iLikeRating}<30",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4455bd8-1b71-4c2c-99b3-48d5550f2011",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.Mx\\(a\\):nth-child(2) path",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d1555dd-241d-4536-b310-13f92a8aadcc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Mx\\(a\\):nth-child(2) path",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf22f997-f93b-4a40-b228-819a098dfc89",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.Mx\\(a\\):nth-child(2) path",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75232a4a-954d-4acc-8702-abfb3ff9aca1",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e74ea9ad-85e9-4053-ab9a-3e3660816e39",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.Mx\\(a\\):nth-child(4) path",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bf1f4c4-b47f-40c8-b94c-eafddc876673",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Mx\\(a\\):nth-child(4) path",
+      "targets": [
+        ["css=.Mx\\(a\\):nth-child(2) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c0b35b2-da0a-42de-b339-7058a3861d66",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.Mx\\(a\\):nth-child(4) path",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d7c44a3-feea-47ba-8eb0-c15a75f1e261",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5358ee4c-d647-486f-a7ba-1c6c6062019b",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1121ea7e-9d3d-472d-9dd4-b3cde7ee1c08",
+    "name": "tinder (1)",
+    "commands": [{
+      "id": "414acfd9-d883-4bff-87ab-5e8fe1af0f03",
+      "comment": "",
+      "command": "open",
+      "target": "https://tinder.com/app/recs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3667f086-0354-447a-86bc-47bf6f08c54b",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.Mx\\(a\\):nth-child(4) path",
+      "targets": [],
+      "value": "100000"
+    }, {
+      "id": "20237190-0cc4-4686-b4d9-200ab5cd61b3",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.Isolate",
+      "targets": [],
+      "value": "100000"
+    }, {
+      "id": "40565b39-cc9e-43ef-9756-deb2337563e3",
+      "comment": "",
+      "command": "while",
+      "target": "1<2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3087dee-bbd3-4272-915f-28387b331bb1",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.ceil(Math.random()*500)+1000",
+      "targets": [],
+      "value": "waitTime"
+    }, {
+      "id": "2a7c0d64-ee35-4b12-9ae4-5677f969924b",
+      "comment": "",
+      "command": "pause",
+      "target": "${waitTime}",
+      "targets": [],
+      "value": "waitTime"
+    }, {
+      "id": "7d9ab5f9-9f0e-45ec-beae-42c2de7d1149",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.ceil(Math.random()*100)",
+      "targets": [],
+      "value": "iLikeRating"
+    }, {
+      "id": "ebdfaa53-8e82-46f3-865b-6f6bcf0aad38",
+      "comment": "",
+      "command": "if",
+      "target": "${iLikeRating}<30",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eae3a20d-51f6-46e2-a783-2cfd5243519b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.Mx\\(a\\):nth-child(2) path",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4daee95-cebb-4f86-af79-371150958b46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Mx\\(a\\):nth-child(2) path",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3c447f9-122a-43b8-aa7f-273df223a88d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.Mx\\(a\\):nth-child(2) path",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd1d2d90-d99a-4eab-b794-03f541f554a7",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46cb8b15-d2a2-4fdb-abc5-d7e971400dd3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.Mx\\(a\\):nth-child(4) path",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "151c8a0c-391d-41c2-acb3-d1c033115913",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Mx\\(a\\):nth-child(4) path",
+      "targets": [
+        ["css=.Mx\\(a\\):nth-child(2) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f9bf0e5-b99f-42a4-89f6-b46a7a695f36",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.Mx\\(a\\):nth-child(4) path",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cc19623-15b2-4cbf-9f85-f033eae15306",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc0f4cd7-9f94-47bb-b9bd-1546ec766f21",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b1cec0b4-008a-46c4-a84d-9862d2ae60c4",
+    "name": "Tinder",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ce6acfe5-5f86-45ef-b921-fa0e328e1e70", "1121ea7e-9d3d-472d-9dd4-b3cde7ee1c08"]
+  }],
+  "urls": ["https://www.linkedin.com/search/results/people/?geoUrn=%5B%22103644278%22%2C%2290000007%22%2C%22101098412%22%5D&keywords=software%20engineer&network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&sid=rLE"],
+  "plugins": []
+}
