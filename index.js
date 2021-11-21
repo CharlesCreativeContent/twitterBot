@@ -21,15 +21,15 @@ server.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/home/index.html");
 });
 
-server.get("/allScripts", (req, res) => {
+server.get("/allScripts.side", (req, res) => {
   res.sendFile(__dirname + "/SeleniumScripts.side");
 });
 
-server.get("/twitterScripts", (req, res) => {
+server.get("/twitter.side", (req, res) => {
   res.sendFile(__dirname + "/twitter.side");
 });
 
-server.get("/tinderScript", (req, res) => {
+server.get("/tinder.side", (req, res) => {
   res.sendFile(__dirname + "/tinder.side");
 });
 
