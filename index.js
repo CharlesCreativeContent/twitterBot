@@ -21,6 +21,10 @@ server.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/home/index.html");
 });
 
+server.get("/gettingStarted", (req, res) => {
+  res.sendFile(__dirname +"/public/home/gettingStarted.html");
+});
+
 server.get("/allScripts.side", (req, res) => {
   res.sendFile(__dirname + "/SeleniumScripts.side");
 });
