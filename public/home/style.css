@@ -16,7 +16,7 @@ width: 75vw;
 
 .card{
 width: 50vw;
-  margin-left: 25vw;
+  float: left;
 }
   
 }
