@@ -1,4 +1,25 @@
 
+.card{
+width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+.card{
+width: 75vw;
+  margin-right: 12vw;
+}
+  
+}
+
+@media only screen and (max-width: 1000px) {
+
+.card{
+width: 50vw;
+  margin-right: 25vw;
+}
+  
+}
 
 body {
 text-align:center;
