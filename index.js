@@ -21,6 +21,18 @@ server.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/home/index.html");
 });
 
+server.get("/allScripts", (req, res) => {
+  res.sendFile(__dirname + "/SeleniumScripts.side");
+});
+
+server.get("/twitterScripts", (req, res) => {
+  res.sendFile(__dirname + "/twitter.side");
+});
+
+server.get("/tinderScript", (req, res) => {
+  res.sendFile(__dirname + "/tinder.side");
+});
+
 server.get("/:tag", (req, res) => {
   res.sendFile(__dirname + `/public/home/${req.params.tag}.html`);
 });
